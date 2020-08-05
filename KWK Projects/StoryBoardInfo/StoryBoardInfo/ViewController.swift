@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var appTitle: UILabel!
+    
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-   print("this is a tes")
+   print("this is a test")
     }
 
+    @IBAction func button(_ sender: UIButton) {
+        if let newTitle =  textField.text {
+               appTitle.text = newTitle
 
+        }
 }
 
+}
